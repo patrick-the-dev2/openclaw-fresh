@@ -1,19 +1,17 @@
 {
   "name": "OpenClaw",
-  "image": "node:20-bullseye",
+  "image": "node:22-bullseye",
   "features": {
     "ghcr.io/devcontainers/features/git:1": {}
   },
-  "postCreateCommand": "npm install",
+  "postCreateCommand": "npm ci",
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-vscode.vscode-typescript-next",
-        "bradlc.vscode-tailwindcss"
+        "ms-vscode.vscode-typescript-next"
       ]
     }
   },
-  "forwardPorts": [3000, 3001],
-  "workspaceMount": "source=${localWorkspaceFolder}/openclaw-workspace,target=/workspaces/openclaw,type=bind,consistency=cached",
+  "forwardPorts": [3000, 3001, 8080],
   "remoteUser": "node"
 }

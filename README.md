@@ -1,4 +1,15 @@
 # 🦞 OpenClaw — Personal AI Assistant
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/patrick-the-dev2/openclaw-fresh?quickstart=1)
+
+**Quick Start (Codespaces)**
+
+1. Click the **Open in GitHub Codespaces** badge above
+2. Add `OPENROUTER_API_KEY` or `NVIDIA_NIM_API_KEY` as Codespaces secrets
+3. Run: `node openclaw.mjs gateway --allow-unconfigured --port 8080`
+4. Access at the auto-generated URL with embedded token
+
+---
+
 
 <p align="center">
     <picture>

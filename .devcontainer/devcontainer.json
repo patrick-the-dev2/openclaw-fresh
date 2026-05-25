@@ -16,13 +16,16 @@
   "remoteUser": "node",
   "secrets": {
     "OPENROUTER_API_KEY": {
-      "description": "OpenRouter API key (free tier available)"
+      "description": "OpenRouter API key (optional - free tier available)"
     },
     "NVIDIA_NIM_API_KEY": {
-      "description": "NVIDIA NIM API key (free at build.nvidia.com)"
+      "description": "NVIDIA NIM API key (optional - free at build.nvidia.com)"
     },
     "OPENCLAW_GATEWAY_TOKEN": {
-      "description": "Gateway token (generate with: openssl rand -hex 32)"
+      "description": "Gateway token (auto-generated if not set)"
+    },
+    "OPENCLAW_GATEWAY_PASSWORD": {
+      "description": "Gateway password (alternative to token)"
     }
   }
 }

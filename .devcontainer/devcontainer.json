@@ -1,5 +1,5 @@
 {
-  "name": "OpenClaw",
+  "name": "OpenClaw Free",
   "image": "node:22-bullseye",
   "features": {
     "ghcr.io/devcontainers/features/git:1": {}
@@ -12,6 +12,17 @@
       ]
     }
   },
-  "forwardPorts": [3000, 3001, 8080],
-  "remoteUser": "node"
+  "forwardPorts": [8080, 18789],
+  "remoteUser": "node",
+  "secrets": {
+    "OPENROUTER_API_KEY": {
+      "description": "OpenRouter API key (free tier available)"
+    },
+    "NVIDIA_NIM_API_KEY": {
+      "description": "NVIDIA NIM API key (free at build.nvidia.com)"
+    },
+    "OPENCLAW_GATEWAY_TOKEN": {
+      "description": "Gateway token (generate with: openssl rand -hex 32)"
+    }
+  }
 }
